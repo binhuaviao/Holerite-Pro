@@ -1,0 +1,5 @@
+{
+  "name": "Gerador de Holerite Profissional",
+  "description": "Aplicativo para geração de holerites (recibos de pagamento) com suporte a PDF e versões colorida ou P&B.",
+  "requestFramePermissions": []
+}

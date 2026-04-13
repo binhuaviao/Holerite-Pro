@@ -1,0 +1,32 @@
+{
+  "entities": {
+    "holerite": {
+      "title": "Holerite",
+      "description": "Dados do holerite gerado pelo usuário",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "ID do usuário proprietário" },
+        "companyName": { "type": "string" },
+        "companyAddress": { "type": "string" },
+        "companyCnpj": { "type": "string" },
+        "employeeName": { "type": "string" },
+        "employeeCode": { "type": "string" },
+        "employeeCbo": { "type": "string" },
+        "employeeRole": { "type": "string" },
+        "referenceMonth": { "type": "string" },
+        "referenceYear": { "type": "string" },
+        "totalEarnings": { "type": "number" },
+        "totalDeductions": { "type": "number" },
+        "netPay": { "type": "number" },
+        "createdAt": { "type": "string", "format": "date-time" }
+      },
+      "required": ["userId", "employeeName", "netPay", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/holerites/{holeriteId}": {
+      "schema": "holerite",
+      "description": "Coleção de holerites salvos"
+    }
+  }
+}
